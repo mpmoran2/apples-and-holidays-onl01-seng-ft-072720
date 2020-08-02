@@ -17,11 +17,7 @@ end
 
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
   holiday_hash[season][holiday_name] = supply_array
-  holiday_hash
 end
-add_new_holiday_with_supplies(holiday_supplies, :Summer, :Lammas, ["wheat", "wine", "bread"])
-
-
 
 def all_winter_holiday_supplies(holiday_hash)
   holiday_hash[:winter].values.flatten
@@ -41,7 +37,7 @@ def all_holidays_with_bbq(holiday_hash)
     holiday_hash.map do |holiday, item|
       holiday if item.include?("BBQ")
     end
-  end.flatten.compact
+  end
 end
 
 
