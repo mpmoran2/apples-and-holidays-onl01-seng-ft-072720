@@ -25,10 +25,10 @@ def all_winter_holiday_supplies(holiday_hash)
 end
 
 def all_supplies_in_holidays(holiday_hash)
-  holiday_hash.each do |supply, holiday|
+  holiday_hash.each do |seaspm, holiday|
     puts "#{season.capitalize}:"
-    holiday_hash.each do |holiday , supply|
-      puts "#{holiday.to_s.split("_").map {|i| i.capitalize}.join(" ")}: #{supply.join}(", "")}
+    holiday_hash.each do |holiday, item|
+      puts "#{holiday.to_s.split("_").map {|i| i.capitalize}.join(" ")}: #{item.join}(", "")}
     end
   end
 end
