@@ -21,10 +21,17 @@ def second_supply_for_fourth_of_july(holiday_hash)
 end
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
-  # holiday_hash is identical to the one above
-  # add the second argument, which is a supply, to BOTH the
-  # Christmas AND the New Year's arrays
-
+  holiday_supplies = {
+    :winter => {
+       :christmas => ["Lights", "Wreath"],
+       :new_years => ["Party Hats"]},
+     :summer => {
+       :fourth_of_july => ["Fireworks", "BBQ"]},
+     :fall => {
+       :thanksgiving => ["Turkey"]},
+     :spring => {
+       :memorial_day => ["BBQ"]}
+  }
 end
 
 
